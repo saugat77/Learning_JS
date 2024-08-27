@@ -2,9 +2,10 @@
 
 
 function App() {
+  const username = "Saugat"
   return (
     <>
-      <h1>Hello Saugat</h1>
+      <h1>{ username }</h1>
     </>
   )
 }
