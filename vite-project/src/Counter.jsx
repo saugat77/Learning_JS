@@ -2,12 +2,12 @@ import React from "react";
 import { useState } from "react";
 
 function Counter() {
-  let [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(0);
   // let counter = 12
   const addValue = () => {
     if (counter < 20) {
-      counter = counter + 1;
-      setCounter(counter);
+      setCounter((prevCounter) => prevCounter + 1);
+      setCounter((prevCounter) => prevCounter + 1);
       console.log("clicked: ", counter);
     }
     else{
