@@ -5,15 +5,23 @@ function Counter() {
   let [counter, setCounter] = useState(0);
   // let counter = 12
   const addValue = () => {
-    counter = counter + 1;
-    setCounter(counter);
-    console.log("clicked: ", counter);
+    if (counter < 20) {
+      counter = counter + 1;
+      setCounter(counter);
+      console.log("clicked: ", counter);
+    }
+    else{
+        alert('cant add more than 20');
+    }
   };
   const removeValue = () => {
-   if (counter > 0) {
-     setCounter(counter - 1);
-     console.log("value Removed");
-   }
+    if (counter > 0) {
+      setCounter(counter - 1);
+      console.log("value Removed");
+    }
+    else{
+        alert('cant go to negative ')
+    }
   };
   return (
     <>
