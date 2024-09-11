@@ -1,16 +1,23 @@
 import React from "react";
 import {useState} from 'react';
-import Cards from "./components/CArds";
-import Counter from "./Counter";
+
 
 
 function App() {
+  const [length, setLength] = useState(8);
+  const [isNumber, setIsNumber] = useState(false);
+  const [isChar, setIsChar] = useState(false);
+  const [password, setPassword] = useState("");
 
+  const passwordGenerator = () => {
+
+  }
   return (
     <>
-      <h1 className="bg-red-300 buttton text-black rounded-xl p-4">Tailwind</h1>
-    <Cards username={'Saugat'} btnText={'Click Me'}/>
-    <Counter />
+      <h1 className="text-4xl text-center text-white">Password Generator</h1>
+      <div>
+
+      </div>
     </>
   );
 
